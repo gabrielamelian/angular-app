@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { StoreModule } from '@ngrx/store';
 
 
 import { AppComponent } from './app.component';
@@ -9,6 +10,9 @@ import { DestinationComponent } from './form/destination/destination.component';
 import { FilterComponent } from './form/filter/filter.component';
 import { PreviewComponent } from './form/preview/preview.component';
 import { PreferencesComponent } from './form/preferences/preferences.component';
+import { imageReducer } from "./image.state";
+import { destinationReducer } from "./destination.state";
+import { filterReducer } from "./filter.state";
 
 
 @NgModule({
@@ -22,7 +26,11 @@ import { PreferencesComponent } from './form/preferences/preferences.component';
     PreferencesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    StoreModule.forRoot({
+                        image: imageReducer,
+                        destination: destinationReducer,
+                        filter: filterReducer})
   ],
   providers: [],
   bootstrap: [AppComponent]
