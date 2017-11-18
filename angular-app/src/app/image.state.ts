@@ -5,7 +5,7 @@ export interface ImageState {
 }
 
 const defaultImageState: ImageState = {
-  imageURL: 'https://xkcd.com/info.0.json'
+  imageURL: 'https://imgs.xkcd.com/comics/how_to_make_friends.png'
 }
 
 export function imageReducer(state: ImageState = defaultImageState,
