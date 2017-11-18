@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { StoreModule } from '@ngrx/store';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 
 import { AppComponent } from './app.component';
@@ -30,7 +31,8 @@ import { filterReducer } from "./filter.state";
     StoreModule.forRoot({
                         image: imageReducer,
                         destination: destinationReducer,
-                        filter: filterReducer})
+                        filter: filterReducer}),
+    StoreDevtoolsModule.instrument({ maxAge: 25 })
   ],
   providers: [],
   bootstrap: [AppComponent]
