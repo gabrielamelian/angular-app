@@ -4,7 +4,6 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-preferences',
   templateUrl: './preferences.component.html',
   styleUrls: ['./preferences.component.css'],
-  encapsulation: ViewEncapsulation.None
 })
 export class PreferencesComponent implements OnInit {
 

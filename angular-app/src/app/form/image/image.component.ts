@@ -4,7 +4,6 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-image',
   templateUrl: './image.component.html',
   styleUrls: ['./image.component.css'],
-  encapsulation: ViewEncapsulation.None
 })
 export class ImageComponent implements OnInit {
 

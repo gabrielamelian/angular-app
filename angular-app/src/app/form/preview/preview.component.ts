@@ -4,7 +4,6 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-preview',
   templateUrl: './preview.component.html',
   styleUrls: ['./preview.component.css'],
-  encapsulation: ViewEncapsulation.None
 })
 export class PreviewComponent implements OnInit {
 

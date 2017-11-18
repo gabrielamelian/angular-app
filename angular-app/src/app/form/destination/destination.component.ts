@@ -4,7 +4,6 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-destination',
   templateUrl: './destination.component.html',
   styleUrls: ['./destination.component.css'],
-  encapsulation: ViewEncapsulation.None
 })
 export class DestinationComponent implements OnInit {
 
